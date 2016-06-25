@@ -1,4 +1,4 @@
-# WDI6_MELB_homework
+# WDI8 MELB homework
 
 ## Submission guide
 
