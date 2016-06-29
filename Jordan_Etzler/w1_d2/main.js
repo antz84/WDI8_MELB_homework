@@ -5,7 +5,7 @@
 // var ageDiff = currentYear - parseInt(birthYear);
 //
 // console.log('Your age is ' + ageDiff );
-
+//
 
 // //The Lifetime Supply Calulator
 //
@@ -15,7 +15,7 @@
 // var lifetimeConsumption = (((maximumAge - currentAge) * dailyConsumption) * 365);
 //
 // console.log("You're lifetime supply of candy would need to be " + lifetimeConsumption + " units.");
-//
+
 
 // //The Geometrizer
 //
@@ -25,7 +25,7 @@
 //
 // console.log('The circumference of the circle is ' + circumference + '.');
 // console.log('The area of the cicle is ' + area + '.');
-//
+
 
 // //The Even/Odd Reporter
 //
@@ -52,12 +52,20 @@
 // }
 // console.table(table);
 
+//Multiplication Table (Version 2)
+
+for (var i=1; i<=10; i++) {
+  for (var j=1; j<=10; j++) {
+      console.log(i + ' * ' + j + ' = ' + (i * j));
+  }
+}
+
 
 // //Vegan Test
 //
 // var menuOption = prompt('What would you like from the menu tonight? Yours choices are steak, fruit salad, tofurkey and pork chops.');
 //
-// if (menuOption == 'tofurkey') {
+// if (menuOption == 'tofurkey' || menuOption == 'fruit salad') {
 //   console.log('This cuisine is vegan friendly :)')
 // } else {
 //   console.log('Vegans beware!')
