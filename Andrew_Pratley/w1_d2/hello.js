@@ -1,4 +1,4 @@
-console.log("JS is working");
+console.log("w1_d2 Homework");
 
 // The Age Calculator
 var date = new Date();
@@ -11,21 +11,22 @@ console.log("They are either " + (currentYear - birthYear) + " or " + (currentYe
 
 var currentAge = 35
 var maximumAge = 88
-var estAmountPerDay = 4
-console.log("Lifetime supply of snacks is " + (maximumAge - currentAge)*estAmountPerDay);
+var yearsRemaining = maximumAge - currentAge;
+var daysRemaining = yearsRemaining*365.25;
+var estAmountPerDay = 1
+console.log("Lifetime supply of snacks is " + estAmountPerDay*daysRemaining);
 
 // The Geometrizer
 
-var radius = 3
-var pi = 3.141592
-console.log("The circumference is " + Math.round(2*pi*radius) + "cm");
-console.log("The area is " + Math.round(pi*radius*radius) + "cm2");
+var radius = 3;
+var circumference = Math.round(2 * Math.PI * radius);
+var area = Math.round(Math.PI * radius * radius);
+console.log("The circumference is " + circumference + "cm");
+console.log("The area is " + area + "cm2");
 
 // The even/odd reporter
 
-var num = 0
-
-for (num = 0; num <= 20; num++) {
+for (var num = 0; num <= 20; num++) {
   if (num % 2 == 0) {
     console.log(num + " is even")
   }
@@ -36,11 +37,8 @@ for (num = 0; num <= 20; num++) {
 
 // Multiplication Tables
 
-var number = 0;
-var number2 = 0;
-
-for (number2 = 1; number2 <=10; number2++) {
-for (number = 0; number <= 10; number++) {
+for (var number2 = 1; number2 <=10; number2++) {
+for (var number = 0; number <= 10; number++) {
   var multipliedNumber = number * number2;
   console.log(number + " x " + number2 + " = " + multipliedNumber);
 }
