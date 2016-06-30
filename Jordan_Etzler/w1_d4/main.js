@@ -85,18 +85,18 @@
 
 
 
-//Arrays
+// Arrays where I have stores all 'line' & 'station' information
 
 var alamein = ['Flinders Street', 'Richmond', 'East Richmond', 'Burnley', 'Hawthorn', 'Glenferrie']
 var glenWaverly = ['Southern Cross', 'Richmond', 'South Yarra', 'Prahan', 'Windor']
 var sandringham = ['Flagstaff', 'Melbourne Central', 'Parliament', 'Richmond', 'Kooyong', 'Tooronga']
 
-//ask user origin and destination
+// User Entry for Origin & Destination
 
-var origin = 'Flinders Street'
-var destination = 'Tooronga'
+var origin = 'Southern Cross'
+var destination = 'Flagstaff'
 
-//find index of origin and destination
+// Calculate index postion of string(station) that matches the user entry
 
 var originIndex = alamein.indexOf(origin);
 var originIndex2 = glenWaverly.indexOf(origin);
@@ -104,92 +104,60 @@ var originIndex3 = sandringham.indexOf(origin);
 var destinationIndex = alamein.indexOf(destination);
 var destinationIndex2 = glenWaverly.indexOf(destination);
 var destinationIndex3 = sandringham.indexOf(destination);
-//
-// //Origin Track
-//
-// if (destinationIndex != -1) {
-//     var destinationX = alamein.length
-//     var trip2Destination = destinationIndex2
-//     var trip2Origin = alamein.indexOf('Richmond')
-//     var trainLine = glenWaverly;
-//     var journeyEnd = alamein.slice(trip2Origin, (trip2Destination + 1));
-//   }
-//   else if (destinationIndex2 != -1) {
-//     var destinationX = glenWaverly.length
-//     var trip2Destination = destinationIndex2
-//     var trip2Origin = glenWaverly.indexOf('Richmond')
-//     var trainLine = glenWaverly;
-//     var journeyEnd = glenWaverly.slice(trip2Origin, (trip2Destination + 1));
-//   }
-//   else {
-//     var destinationX = sandringham.length
-//     var trip2Destination = destinationIndex3
-//     var trip2Origin = sandringham.indexOf('Richmond')
-//     var journeyEnd = sandringham.slice(trip2Origin, (trip2Destination + 1));
-// }
 
-//var journeyStart = alamein.slice(originIndex, (trip1Origin)); //need to define trip 1 origin
+// If statement to decide which track User will begin on.
 
+if (originIndex != -1) {
+  var OriginX = alamein.length
+  var tripOrigin = originIndex
+  var tripSlice = alamein.indexOf('Richmond')
+  var journeyStart = alamein.slice( tripOrigin, (tripSlice + 1) );
+  }
+  else if (originIndex2 != -1) {
+    var OriginX = glenWaverly.length
+    var tripOrigin = originIndex2
+    var tripSlice = glenWaverly.indexOf('Richmond')
+    var journeyStart = glenWaverly.slice(tripOrigin, (tripSlice + 1) );
+  }
+  else {
+    var OriginX = sandringham.length
+    var tripOrigin = originIndex3
+    var tripSlice = sandringham.indexOf('Richmond')
+    var journeyStart = sandringham.slice(tripOrigin, (tripSlice + 1) );
+}
 
-
-//Detination Track
+// If statement to decide which track User will finish on.
 
 if (destinationIndex != -1) {
     var destinationX = alamein.length
-    var trip2Destination = destinationIndex2
-    var trip2Origin = alamein.indexOf('Richmond')
+    var trip2Destination = destinationIndex
+    var trip2Slice = alamein.indexOf('Richmond')
     var trainLine = glenWaverly;
-    var journeyEnd = alamein.slice(trip2Origin, (trip2Destination + 1));
+    var journeyEnd = alamein.slice((trip2Slice + 1), (trip2Destination + 1));
   }
   else if (destinationIndex2 != -1) {
     var destinationX = glenWaverly.length
     var trip2Destination = destinationIndex2
-    var trip2Origin = glenWaverly.indexOf('Richmond')
+    var trip2Slice = glenWaverly.indexOf('Richmond')
     var trainLine = glenWaverly;
-    var journeyEnd = glenWaverly.slice(trip2Origin, (trip2Destination + 1));
+    var journeyEnd = glenWaverly.slice((trip2Slice + 1), (trip2Destination + 1));
   }
   else {
     var destinationX = sandringham.length
     var trip2Destination = destinationIndex3
-    var trip2Origin = sandringham.indexOf('Richmond')
-    var journeyEnd = sandringham.slice(trip2Origin, (trip2Destination + 1));
+    var trip2Slice = sandringham.indexOf('Richmond')
+    var journeyEnd = sandringham.slice((trip2Slice + 1), (trip2Destination + 1));
 }
 
-//Journey Array
-
-//1 Line
-
-//var journeyStart = alamein.slice(originIndex, (trip1Origin)); //need to define trip 1 origin
-//var journeyEnd = alamein.slice(trip2Origin, destinationIndex);
-
-//2 Lines (Positive)
-
-//var JourneyStart = alamein.slice(originIndex, trip2Origin);
-//var JourneyEnd = sandringham.slice(trip2Origin, (trip2Destination + 1));
-
-//2 Lines (Negative)
-
-
-// Join Arrays
+// Join Arrays to create a trip for the user
 
 TripFinal = journeyStart.concat(journeyEnd);
 
-//Trip length
+// Array length calculator to provide user with amount of trips
 
 var tripLength = TripFinal.length
 
-
-
-//Output
+// Output
 
 console.log(TripFinal)
 console.log(TripFinal.length);
-
-
-
-
-
-
-
-//cr
-// var difference = function (a, b) { return Math.abs(a - b) }
