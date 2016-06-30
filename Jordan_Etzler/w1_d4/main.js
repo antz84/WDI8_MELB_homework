@@ -9,8 +9,8 @@ var sandringham = ['Flagstaff', 'Melbourne Central', 'Parliament', 'Richmond', '
 // var origin = prompt('Where would you like to begin your journey?');
 // var destination = prompt('Where would you like to end your journey?');
 
-var origin = 'Flagstaff'
-var destination = 'Parliament'
+var origin = 'Burnley'
+var destination = 'Glenferrie'
 
 // Calculate index postion of string(station) that matches the user entry
 
