@@ -20,21 +20,40 @@ var recipe = {
 
 }
 
-for(i = 0; i < recipe.length; i++){
-
-
-}
 console.log(recipe.title);
 console.log(recipe.serving);
 
 for(var j = 0; j < recipe.ingredients.length ; j++)
 {
-    var cake = recipe.ingredients + "\n";
+    console.log(recipie.ingredients[i]);
 }
-console.log(cake);
 
 
-// THE READING LIST
+        //This is an idea of how to add objects an array
+
+        var book = [];
+        var book1 = {
+            title: 'batman',
+            author: 'manning',
+            alreadyRead : false
+        }
+
+         books = [book1];
+
+         //Another book pushing to array
+         var books = {
+             title: 'catman',
+             author: 'ranning',
+             alreadyRead : false
+         }
+
+        //books.push(book2);
+        books = [book1,book2];
+        books[0];
+        books[0].title
+        books[0][title]
+
+// THE READING LIST MY ATTEMPT
 
 var book = [
 {
@@ -67,3 +86,30 @@ if(book[k].reading == true)
     console.log("you have not read " + book[k].title);
 }
 }
+// ALTERNATIVE FOR NO == TRUE BECAUSE OF TRUTHY FALSEY
+for(var f = 0; f < book.length ; f++ )
+{
+    var book = book[f];
+    var desc = book.title + "by" + book.author;
+
+    if(book.reading)
+    {
+        console.log("You have read " + desc);
+
+    }else{
+        console.log("you have not read " + desc);
+    }
+}
+// THE MOVIE EXERCISE
+
+var movie = {
+    title : 'sharnado',
+    duration : 100,
+    stars : ['90210 guy', 'sharks']
+}
+
+console.log(movie.title);
+console.log(movie.duration);
+console.log(movie.stars.join(','));
+
+//join convers array into string and pass in a concatinator join can be with anything ( - )

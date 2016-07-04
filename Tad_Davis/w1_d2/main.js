@@ -23,10 +23,10 @@ console.log("You will need " + average + " to last to the ripe old age of " + lo
 //Third Question
 console.log("The Geometrizer");
 
-var pi = 3.141592
+var pi = Math.PI;
 var radius = 10;
 var diameter = 2 * radius;
-var circumfrence = pi * diameter;
+var circumfrence = 2* pi * diameter;
 var area = pi * (radius * radius);
 
 console.log("the circumfrence is " + circumfrence);
@@ -48,7 +48,7 @@ console.log("");
 
 
 for(i = 0; i <10; i++){
-    console.log(i + "* 9 = " + i * 9 )
+    console.log(i + "* 9 = " + i * 9 );
 }
 
 //Sixth Question
