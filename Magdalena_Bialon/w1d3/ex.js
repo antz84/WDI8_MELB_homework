@@ -23,7 +23,7 @@ console.log(Question3 +'\n'+ q3);
 
 // Question 4
 var Question4 ='Using the array from Question 1, store the last element of the array in variable q4. Hint: How can we get the number of elements in the array?';
-var q4 = q1[q1.length -1];
+var q4 = q1[q1.length-1];
 console.log(Question4 +'\n'+ q4);
 
 
@@ -79,6 +79,9 @@ var  favRecipe = {
   console.log(favRecipe['servings']);
   console.log(favRecipe.ingredients);
 
+for (var i=0; i<recipe.ingredients.length; i++){
+  console.log(favRecipe.ingredients[i]);
+}
 
 
 
@@ -98,6 +101,7 @@ var book2 = {
 }
 
 var arrOfObj = [book1, book2];
+
 
 for (var i = 0; i<arrOfObj.length; i++){
   console.log("The "+arrOfObj[i].title+" by "+ arrOfObj[i].author+'.');
@@ -132,6 +136,38 @@ for (var i = 0; i<arrOfObj.length; i++){
 
 
 
+//create array of objects in other way
+var books = [{
+ title : 'Girl with the Dragon Tattoo',
+ author : 'Larsson',
+ alreadyRead : true
+},
+ {
+ title : 'Batman Files',
+ author : 'Manning',
+ alreadyRead : false
+}]
+
+books[0].title;
+books[0]['title'];
+
+
+for (var i=0; i < books.length; i++){
+  var book = books[i]; //extra step
+  var desc = book.title + ' by '+ book.author;
+
+  if (book.alreadyRead){
+    console.log('already read ' + desc)
+  } else{
+    console.log('go read it ' + desc)
+  }
+}
+
+//var myStupidArrayObject = {0:'a', 1:'b', 2:'c'}
+
+
+
+
 // The Movie Database
 console.log('It is like IMDB, but much much smaller!');
 
@@ -145,3 +181,7 @@ function printOut(movie){
 console.log(movie.title+ ' lasts '+ movie.duration+ ' minutes.' +'\n'+ 'Stars '+ movie.stars[0]+', '+movie.stars[1]+ '.');
 }
 printOut(favMovie);
+
+
+//sth extra
+console.log(favMovie.stars.join(', '))

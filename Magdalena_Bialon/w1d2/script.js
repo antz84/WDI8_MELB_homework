@@ -61,6 +61,32 @@ var table = [];
   }
   console.table(table);
 
+//or:
+for (var i =0; i<=10; i++){
+  var result = i *9;
+  console.log(i + ' *9 = ' +result)
+}
+
+//bonus, nested loop
+var table = '';
+for(var i = 0; i <= 10; i++) {
+    for(var a = 0; a <=10; a++) {
+        var multi = i*a
+        table += multi + ' ';
+        console.log(multi) ;
+    }
+    table += "\n";
+}
+console.log(table);
+
+//another version
+for (var i=1; i<=10; i++) {
+  for (var j=1; j<=10; j++) {
+      console.log(i + ' * ' + j + ' = ' + (i * j));
+  }
+}
+
+
 
 
 //The Vegan Test
