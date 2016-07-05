@@ -1,0 +1,179 @@
+/* here be awesome css */
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+.navButton {
+  display: inline-block;
+  width: 16.66666%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.7em 0 0.7em 0;
+  font-weight: lighter;
+}
+
+nav .internal {
+  border-left: 1px solid white;
+}
+
+nav {
+  margin-bottom: 30px;
+}
+
+header {
+  padding: 25px 0 5px 0;
+}
+
+header > h1 {
+  color: #f30000;
+  font-weight: 300;
+  font-size: 3em;
+  display: inline;
+  font-family: 'Lato', sans-serif;
+}
+
+header > h2 {
+  color: grey;
+  font-weight: 300;
+  font-size: 1.5em;
+  display: inline;
+  padding-left: 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: black;
+  font-weight: 300;
+  margin-top: 0px;
+}
+
+h4 {
+  color: #dddddd;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+h5 {
+  color: grey;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+p {
+  color: #444444;
+}
+
+nav {
+  background-color: green;
+
+}
+
+.wrapper {
+  width: 1000px;
+  margin: auto;
+}
+
+main {
+  width: 70%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 10px 0 0;
+}
+
+.post {
+  margin: 10px;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 15px;
+}
+
+span {
+  font-size: 3em;
+  color: #dddddd;
+  float: left;
+  padding: 0 15px 0 0;
+}
+
+div > img {
+  width: 100%;
+}
+
+aside {
+  width: 29%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0 0 0 10px;
+  padding: 15px;
+}
+
+.sidebarMiddle {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  padding: 20px 0px 20px 0px;
+  margin: 20px 0px 20px 0px
+}
+
+.sidebar {
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
+.ad {
+  height: 225px;
+  width: 100%;
+  background-color: #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ad > p {
+  font-size: 4.5em;
+  color: #969696;
+  font-weight: 600;
+}
+
+.popularPosts {
+  color: black;
+}
+
+.popularPosts > p {
+  color: #f30000;
+  padding: 0px 0px 0px 0px;
+  margin: 3px 0px 3px 0px;
+}
+
+.buttonHolder {
+  text-align: right;
+  padding: 10px 0px 10px 0px;
+}
+
+.continueButton {
+  color: #f30000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footerNav {
+  display: inline-block;
+  color: #f30000;
+  padding: 0 5px 0 5px;
+  font-weight: 300;
+}
+
+.footerBorder {
+  border-left: 1px solid #dddddd;
+}
+
+footer > ul {
+  padding-left: 0px;
+}
+
+footer > p {
+  color: #dddddd;
+  font-weight: 300;
+  padding-bottom: 40px;
+}
