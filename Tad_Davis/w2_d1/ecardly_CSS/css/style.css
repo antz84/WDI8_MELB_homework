@@ -1,0 +1,140 @@
+header{
+	text-align: center;
+	margin:1% 0%;
+}
+
+.wholepage{
+	padding: 1% 0%;
+
+}
+
+
+
+body{
+	background-image: url("../images/background.jpg");
+	background-repeat: repeat-x;	
+	background-color: lightgrey;
+
+}
+
+
+.content{
+	width:1080px;
+	margin:auto;	
+}
+ 
+span{
+	color: #ff6600;
+}
+
+* {
+
+box-sizing: border-box;
+
+}
+
+
+/*
+
+block = across the whole thing 
+inline = span is inline, cant control the width of things it depends on the content.
+inline block = you can control the box sizes 
+
+dts idea for the main and aside 
+
+//sear for .contain and anything that is inside that is a diret child. 
+.container > * {
+	display: inline-block;
+	height 100px;
+	vertical-align: top; (for both)
+
+//this tartgets all children unlike article > img
+article img {
+	
+}
+
+
+
+for the footer of the article you can do a border INSTEAD OF HR
+border-top 1px dashed 
+border bottom 1px solid
+
+
+for the whole contain we can 
+width : 90%;
+and margin : 0 auto;
+
+
+text align doesnt work for the images it has to work for the parents. 
+
+}d\
+ */
+
+
+.main-content{
+
+	box-sizing: border-box;
+	display: inline-block;
+	width: 58%;
+	background-color: white;
+}
+
+aside{
+	
+	
+	display: inline-block;
+	width: 33%;
+	margin-left: 3%;
+	/*margin-top:5%; */
+	vertical-align: top;
+	background-color: white;
+	padding: 3% 1%;
+	
+}
+
+header{
+	background-image: url("images/background-image");
+	height: 200px;
+}
+
+.story{
+
+	padding: 2%;
+	padding-bottom: 10px;
+}
+
+ul li{
+	list-style: none;
+	}
+
+.side-pics{
+	padding: 3% 10%;
+}
+
+.footer-pics{
+	text-align: center;
+	padding: 2% 0%;
+	
+
+	}
+
+.col-left{
+	height: 100px;
+	background-color: plum;
+	display: inline-block;
+	width: 40%;
+}
+
+
+.col-right{
+	height: 100px;
+	background-color: tomato;
+	display: inline-block;
+	width: 60%
+}
+
+.overline{
+	border-top:1px dotted;
+
+}
+
