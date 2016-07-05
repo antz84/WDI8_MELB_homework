@@ -123,11 +123,15 @@ the object String so that it is possible to
 call: "General Assembly".reverseString().*/
 
 //Think you use eval() but don't understand syntax
+//or create object with reverseString property and value calls func
 
-var reverseString = function (str){
-  return str.split('').reverse('').join('')
+/*var words = {
+  reverseString : reverseString(),
 };
 
+var reverseString = function (input){
+  return input.split('').reverse('').join('')
+}; */
 
 
 // Bonus 2
