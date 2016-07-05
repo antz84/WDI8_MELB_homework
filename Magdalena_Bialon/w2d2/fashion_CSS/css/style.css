@@ -1,0 +1,161 @@
+/* here be awesome css */
+.wrapper{
+  margin: 2em auto;
+  box-sizing: border-box;
+  font-family: 'Poiret One', cursive;
+  padding: 1.2em;
+  width: 100%;
+  /*text-align: center;*/
+}
+
+/*header{
+  background-color: plum;
+}*/
+
+main {
+  /*background-color: linen;*/
+  display: inline-block;
+  width: 68%;
+  vertical-align: top;
+  margin-top: 3em;
+}
+
+aside {
+  /*background-color: yellow;*/
+  display: inline-block;
+  width: 29%;
+  vertical-align: top;
+  margin-top: 3em;
+  margin-left: 1em;
+}
+
+section {
+  /*background-color: plum;*/
+}
+
+article {
+  margin-bottom: 1em;
+}
+
+
+.brooklyn, .vintage {
+  border-bottom: 1px solid grey;
+}
+
+img {
+  width: 100%;
+}
+
+
+p, ul {
+  font-size: 1em;
+}
+
+
+li > a {
+  color: #ED3B18;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+ul {
+	list-style-type: none;
+	position: relative;
+	margin-left: 2em;
+	padding-left: 0;
+}
+li:before {
+	content: "•";
+	position: absolute;
+	left: -1em;
+	color: grey;
+}
+
+
+h1{
+  font-size: 1.3em;
+  color: #3d3d3d;
+}
+
+h1 > span {
+  color: #ED3B18;
+  font-size: 3em;
+  padding: 0 1em 0 0;
+}
+
+.cont {
+  color: #ED3B18;
+  font-weight: 900;
+  text-align: right;
+  padding: 0 1em 0 0;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #D5E3E8;
+}
+
+span {
+  color: #D5E3E8;
+}
+
+p > span {
+  float: left;
+  font-size: 4em;
+  padding: 0 0.2em 0 0;
+}
+
+h4 {
+  font-size: 1em;
+  padding-top: 3em;
+  color: grey;
+}
+
+
+.top > a {
+    width: 16%;
+    background-color: black;
+    color: white;
+    padding: 1em 0.1em;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    /*border: 1px solid black;*/
+}
+
+
+.bottom > a {
+  color: #ED3B18;
+  display: inline-block;
+  font-size: 1em;
+  padding: 0 0.5em 0 0;
+  border-right: 1px solid #d3d3d3;
+}
+
+
+.add {
+  text-align: center;
+  background-color: #d3d3d3;
+  padding: 1em;
+  font-weight: bold;
+  font-size: 1em;
+}
+.add > p {
+  font-size: 2em;
+  margin: 3em 0;
+}
+
+.aboutUS{
+  border-bottom: 1px solid black;
+}
+
+.popPost {
+  border-top: 1px solid black;
+}
