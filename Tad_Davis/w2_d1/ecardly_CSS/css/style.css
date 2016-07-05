@@ -1,14 +1,22 @@
 header{
-	background-image: url("background.jpg");
 	text-align: center;
-	margin:3% 0%;
+	margin:1% 0%;
 }
-
 
 .wholepage{
-	background-color: lightgrey;
 	padding: 1% 0%;
+
 }
+
+
+
+body{
+	background-image: url("../images/background.jpg");
+	background-repeat: repeat-x;	
+	background-color: lightgrey;
+
+}
+
 
 .content{
 	width:1080px;
@@ -24,6 +32,44 @@ span{
 box-sizing: border-box;
 
 }
+
+
+/*
+
+block = across the whole thing 
+inline = span is inline, cant control the width of things it depends on the content.
+inline block = you can control the box sizes 
+
+dts idea for the main and aside 
+
+//sear for .contain and anything that is inside that is a diret child. 
+.container > * {
+	display: inline-block;
+	height 100px;
+	vertical-align: top; (for both)
+
+//this tartgets all children unlike article > img
+article img {
+	
+}
+
+
+
+for the footer of the article you can do a border INSTEAD OF HR
+border-top 1px dashed 
+border bottom 1px solid
+
+
+for the whole contain we can 
+width : 90%;
+and margin : 0 auto;
+
+
+text align doesnt work for the images it has to work for the parents. 
+
+}d\
+ */
+
 
 .main-content{
 
