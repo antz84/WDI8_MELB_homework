@@ -1,4 +1,4 @@
-#topImg {
+/*#topImg {
   background-image:url('../images/background.jpg');
   background-repeat: repeat-x;
   height: 100px;
@@ -54,4 +54,71 @@ footer {
   border-color: #000000;
   border-left: none;
   border-right: none;
+}*/
+
+/*DT's CSS*/
+
+* {
+  box-sizing: border-box;
 }
+
+#logo {
+  display: block;
+  margin: 0 auto 12px auto;
+}
+
+body {
+  background-image: url("../images/background.jpg");
+  background-repeat: repeat-x;
+  background-color: #d3d3d3;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto 0 auto;
+}
+
+.container > * {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.main {
+  width: 60%;
+  background-color: pink;
+}
+
+aside {
+
+  padding: 1em;
+  width: 39%;
+  background-color: mistyrose;
+}
+
+article img {
+  max-width: 100%;
+}
+
+article footer {
+  border-top: 1px dashed black;
+  border-bottom: 1px solid black;
+  padding: 5px 5px;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside img {
+  max-width: 100%;
+  display: block;
+  margin: 1px auto 1px auto;
+}
+
+
+
+
+
+
+
