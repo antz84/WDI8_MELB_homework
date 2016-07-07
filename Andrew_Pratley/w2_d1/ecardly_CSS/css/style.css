@@ -1,38 +1,36 @@
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #d6d6d6;
   margin: 0 auto;
   text-align: center;
-}
-
-header {
-  height: 162px;
   background-image: url("../images/background.jpg");
-  margin-bottom: 100px;
+  background-repeat: repeat-x;
 }
 
-header>img {
+header img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    top: 20px;
+    margin: 2em auto 2em auto;
 }
 
-.col-right {
+main {
+  background-color: white;
+  display: inline-block;
+  width: 640px;
+  vertical-align: top;
+  font-weight: bold;
+}
+
+aside {
   background-color: white;
   display: inline-block;
   width: 280px;
   margin-left: 10px;
   text-align: left;
   vertical: top;
-}
-
-.col-left {
-  background-color: white;
-  display: inline-block;
-  width: 640px;
-  vertical-align: top;
-  font-weight: bold;
 }
 
 .side_elements {

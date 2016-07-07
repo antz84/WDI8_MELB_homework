@@ -4,10 +4,40 @@ var alamein = ["Flinders Street", "Richmond", "East Richmond", "Burnley", "Hawth
 var glenWaverley = ["Flagstaff", "Melbourne Central", "Parliament", "Richmond", "Kooyong", "Tooronga"];
 var sandringham = ["Southern Cross", "Richmond", "South Yarra", "Prahran", "Windsor"];
 
+var lines = {
+  alamein: [],
+  glen: [],
+  sand: []
+}
+
+function findLine(lines, stationName) {
+  // for in
+  for (line in lines) {
+    console.log(line);
+    console.log(lines.line);
+
+
+  }
+}
+
+findLine(lines, 'Flinders Street') // returns: lineName eg line name, index of station. 0.
+
+findLine(lines, 'Southern Cross') // sandringam, 0.
+
+//need a function to GET TO RICHMOND from a provided position.
+//need a function to FROM RICHMOND TO DEST from a provided position.
+
+// need to say which line you are interchanging to.
+// put whole code in function - the benefit of this is that is encapsulates it so your variables are only in your function, and won't affect other people's programs.
+// create smaller functions where I can reuse instead of repeating
+// e.g. one function could be setStartingLine would be one argument
+// change data structure to have object with three properties
+
+
 var start = prompt();
 var finish = prompt();
 
-// Which line are thes starting and finishing stations on?
+// Which lines are the starting and finishing stations on?
 
 if (start != "Richmond") {
   var startingLine = "";
