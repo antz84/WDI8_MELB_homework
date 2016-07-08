@@ -1,0 +1,28 @@
+function warning(msg,deficit){
+  var headsup;
+  var appendMsg;
+  headsup=document.createElement('div');
+  headsup.style.color="red";
+  headsup.style.fontSize="1em";
+      console.log(msg+" | "+deficit);
+  if(typeof deficit==='undefined'&&msg==="saving"){
+    console.log(" | ");
+    appendMsg=document.getElementById('saving');
+    headsup.textContent="Insufficient Balance!";
+    appendMsg.appendChild(headsup);
+  }else if(typeof deficit==='undefined'&&msg==="checking"){
+    appendMsg=document.getElementById('checking');
+    headsup.textContent="Insufficient Balance!";
+    appendMsg.appendChild(headsup);
+  }else if(msg==="saving"){
+    appendMsg=document.getElementById('saving');
+    headsup.textContent="Insufficient! $"+deficit+" transfered from checking";
+    appendMsg.appendChild(headsup);
+  }else if(msg==="checking"){
+    appendMsg=document.getElementById('checking');
+    headsup.textContent="Insufficient! $"+deficit+" transfered from saving";
+    appendMsg.appendChild(headsup);
+  }else{
+    console.log("Error in displaying msg!");
+  }
+}
