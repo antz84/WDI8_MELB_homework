@@ -4,8 +4,8 @@ document.getElementsByTagName('h1')[1];
 //q2
 var element1 = document.getElementsByTagName('h1')[0];
 var element2 = document.getElementsByTagName('h1')[1];
-element1.innerHTML('Friend');
-element2.innerHTML('Friend');
+element1.innerHTML = 'Friend';
+element2.innerHTML = 'Friend';
 
 
 //q3
