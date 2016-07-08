@@ -1,0 +1,48 @@
+body{
+	width: 100%;
+	margin-bottom: 50px;	
+/*	background-image: url("http://www.absolutegeeks.com/wp-content/uploads/2015/07/fwmarisyyi9s0xrveei60c5y5nkgu7tjwemvzyvg1vnimhtrvhzcovjfqompn14p.jpg");
+*/
+ background: pink;	
+background-size: cover;
+
+}
+*{
+	box-sizing: border-box;
+}
+
+h1{
+	text-align: center;
+}
+
+.ourAccounts{
+	height: 300px;
+	width: 25%;
+	margin:12.5% 12.5% 0% 12.5%;
+	background-color: grey;
+	border-radius: 25px;
+	float: left;
+	color:white;	
+	
+	}
+
+.burns{
+	text-align: center;
+	background-color: red;
+}
+.fancyButton{
+
+	width: 24%;
+	margin:12.5% 12.5% 0% 12.5%;
+	color: white;
+	background-color: blue ;
+
+}
+.textboxBankAcc{
+	background-color: pink; 
+	width: 54%;
+	text-align: center;
+	padding-left: 10%;
+}
+
+*/
