@@ -81,18 +81,34 @@ listenerAdder(calLifeSup,"lifebtn","click");
 
  //The Vegan Test
  var veganTest = function(){
+   var option = this.getAttribute('id');
+       uncheckChecked(option);
    var steak = document.getElementById("Steak").checked;
    var fruitsalad = document.getElementById("fruit salad").checked;
    var tofurkey = document.getElementById("tofurkey").checked;
    var porkchops = document.getElementById("pork chops").checked;
    var alergy = document.getElementById("alergy");
-   if((fruitsalad||tofurkey)&&!(porkchops||steak)){
+   if(fruitsalad||tofurkey){
      alergy.textContent="This cuisine is vegan friendly.";
-   }else if(porkchops||steak){
-     alergy.textContent="";
+   }else{
      alergy.textContent="Vegan be aware!";
    }
+
+
  }
+
+ //uncheck all checked boxes
+ function uncheckChecked(CheckedId){
+   var tagNames = document.getElementsByClassName('ckbx');
+   for(var i=0;i<tagNames.length;i++){
+        if(tagNames[i].id===CheckedId){
+          tagNames[i].checked=true;
+        }else{
+          tagNames[i].checked=false;
+        }
+   }
+ }
+
  listenerAdder(veganTest, "Steak", "click");
   listenerAdder(veganTest, "fruit salad", "click");
    listenerAdder(veganTest, "tofurkey", "click");

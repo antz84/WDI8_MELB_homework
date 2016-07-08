@@ -1,0 +1,102 @@
+body{
+  background-image: url('coins-money.jpg');
+}
+h1{
+  font-size: 5em;
+  //display: inline-block;
+  margin: 0 auto;
+  padding-top: 35px;
+  color:#b30738;
+}
+img{
+  //display: inline-block;
+  width:20%;
+  float:left;
+}
+.banner{
+  clear:both;
+  margin-bottom: 30px;
+}
+.transaction{
+  box-sizing: border-box;
+  width:90%;
+  margin:auto;
+  clear:both;
+}
+.account{
+  box-sizing: border-box;
+  border-radius: 20px;
+  width:45%;
+  float:left;
+  background-color: #eba700;
+}
+.account h2{
+  text-align: center;
+  color:#b30738;
+  font-size: 3em;
+  margin: 5% auto;
+}
+.account h3{
+  text-align: center;
+  color:#888888;
+  font-size: 2em;
+}
+.balance{
+  text-align:center;
+  color:#85bb65;
+  font-size: 5em;
+  width:50%;
+  margin: auto;
+}
+
+/*input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}*/
+.teller{
+    font-size: 1em;
+    width: 70%;
+    padding: 12px 20px;
+    margin: auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-bottom: 5%;
+}
+.btnGrp{
+  width:80%;
+  margin: auto;
+  margin-bottom: 10%;
+  text-align: center;
+}
+.btnElmt{
+  color:#eba700;
+  font-size: 1em;
+  border: none;
+  border-radius: 4px;
+  background-color: #b30738;
+  width:40%;
+  margin: auto 4%;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+}
+.warning{
+  font-size: 1em;
+  color: red;
+  width:100%
+  margin:auto;
+  text-align:center;
+}
+#saving{
+  margin-right:10%;
+}
+#checking{
+  //margin-left: 5%;
+}
