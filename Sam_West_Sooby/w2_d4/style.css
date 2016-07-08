@@ -1,0 +1,71 @@
+ 
+
+
+
+body {
+  text-align: center;
+}
+
+#logo {
+  display: inline-block;
+  padding: 1em 4em;
+  background-color: red;
+  color: black;
+  border: black 1px solid;
+  margin-left: 0;
+  margin-right: 4em;
+}
+
+button {
+  margin-top: 0.5em;
+}
+
+span {
+  font-size: 2.4em;
+  padding-bottom: .6em;
+  display: block;
+}
+
+#onlineBank {
+  display: inline-block;
+  margin: 0.7em auto;
+  text-align: center;
+  padding-left: 2em;
+}
+
+.middlePage {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+#middlePageLeft,
+#middlePageRight {
+  width: 10%;
+  margin: 1em auto;
+}
+
+#middlePageLeft {
+  display: inline-block;
+  color: black;
+  background-color: #e68a00;
+  border: black 1px solid;
+  padding: 1em 4em;
+  margin-right: 4em;
+  margin-top: 6em;
+}
+
+#middlePageRight {
+  display: inline-block;
+  color: black;
+  background-color: #e6e600;
+  border: black 1px solid;
+  padding: 1em 4em;
+  float: center;
+  vertical-align: top;
+  margin-left: 4em;
+  margin-top: 6em;
+}
+
+#checkInput {
+  margin: 0 auto;
+}
