@@ -1,13 +1,11 @@
-// var originInput = document.getElementById('originInput');
-// var destinationInput = document.getElementById('destinationInput');
-var routeButton = document.getElementsByTagName('button')[0];
+var inputOrigin = document.getElementsByTagName('input')[0];
+var inputDestination = document.getElementsByTagName('input')[1];
+var resultDisplay = document.getElementById('routeButton');
+var result = document.getElementById('result');
 
+// var origin = inputOrigin.value;
 
-var originInput = 'Richmond'
-var destinationInput = 'Burnley'
-
-
-function findRoute() {
+function findRoute(a, b) {
 
   // for (var i = 0; i < trainLines.length; i++)
   //   if (trainLines[i].indexOf(origin) != -1) {
@@ -20,36 +18,36 @@ function findRoute() {
 
   // Find Active trainlines
 
-  if (alamein.indexOf(originInput.value) != -1) {
-    var originIndex = alamein.indexOf(originInput.value);
+  if (alamein.indexOf(inputOrigin.value) != -1) {
+    var originIndex = alamein.indexOf(inputOrigin.value);
     var intersectionO = alamein.indexOf("Richmond");
     var originLine = alamein;
   }
-  if (glenWaverly.indexOf(originInput.value) != -1) {
-    var originIndex = glenWaverly.indexOf(originInput.value);
+  if (glenWaverly.indexOf(inputOrigin.value) != -1) {
+    var originIndex = glenWaverly.indexOf(inputOrigin.value);
     var intersectionO = glenWaverly.indexOf("Richmond");
     var originLine = glenWaverly;
   }
-  if (sandringham.indexOf(originInput.value) != -1) {
-    var originIndex = sandringham.indexOf(originInput.value);
+  if (sandringham.indexOf(inputOrigin.value) != -1) {
+    var originIndex = sandringham.indexOf(inputOrigin.value);
     var intersectionO = sandringham.indexOf("Richmond");
     var originLine = sandringham;
   }
 
   /////////
 
-  if (alamein.indexOf(destinationInput.value) != -1) {
-    var destinationIndex = alamein.indexOf(destinationInput.value);
+  if (alamein.indexOf(inputDestination.value) != -1) {
+    var destinationIndex = alamein.indexOf(inputDestination.value);
     var intersectionD = alamein.indexOf("Richmond");
     var destinationLine = alamein;
   }
-  if (glenWaverly.indexOf(destinationInput.value) != -1) {
-    var destinationIndex = glenWaverly.indexOf(destinationInput.value);
+  if (glenWaverly.indexOf(inputDestination.value) != -1) {
+    var destinationIndex = glenWaverly.indexOf(inputDestination.value);
     var intersectionD = glenWaverly.indexOf("Richmond");
     var destinationLine = glenWaverly;
   }
-  if (sandringham.indexOf(destinationInput.value) != -1) {
-    var destinationIndex = sandringham.indexOf(destinationInput.value);
+  if (sandringham.indexOf(inputDestination.value) != -1) {
+    var destinationIndex = sandringham.indexOf(inputDestination.value);
     var intersectionD = sandringham.indexOf("Richmond");
     var destinationLine = sandringham;
   }
@@ -91,17 +89,46 @@ function findRoute() {
 
   }
 
-  //this needs to reset html elements
-  console.log(journeyDisplay);
+  //Output to HTML
 
-  if (originLine === destinationLine) {
-    console.log(finalJourney.length);
-  } else {
-    console.log(finalJourney.length - 1);
+  //Journey Begin
+  document.getElementById("originAnnounce").innerHTML = finalJourney[0];
+
+  //Journey Stops
+
+  for (var k = 1; k < (finalJourney.length - 1); k++) {
+    var newLi = document.createElement('li');
+    var textNode = document.createTextNode(finalJourney[k]);
+    newLi.appendChild(textNode);
+    document.getElementById("stops").appendChild(newLi);
   }
+
+  //Journey End
+  var lastStop = finalJourney.length - 1
+  document.getElementById("destinationAnnounce").innerHTML = finalJourney[Number(lastStop)];
+
+  //Journey Stops (Numerical)
+  document.getElementById("stopsNumerical").innerHTML = finalJourney.length;
+
+  //Stops (Numerical)
+  if (originLine === destinationLine) {
+    document.getElementById("stopsNumerical").innerHTML = finalJourney.length;
+  } else {
+    document.getElementById("stopsNumerical").innerHTML = finalJourney.length;
+  }
+
+  //box styling
+
+  var journeyDisplay = document.getElementsByClassName('journeyDisplay')[0];
+  journeyDisplay.style.display = 'block';
+
+
+
+
+
 }
 
 
-routeButton.addEventListener('click', function() {
+routeButton.addEventListener('click', function () {
   findRoute()
 });

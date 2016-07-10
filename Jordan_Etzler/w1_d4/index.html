@@ -1,13 +1,33 @@
-<!DOCTYPE HTML>
-
-<html>
-
-  <head>
-    <script src="main.js"></script>
-  </head>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Melbourne Public Transport</title>
+  <link rel="stylesheet" href="style.css">
+</head>
   <body>
-    <h1>Open the Console</h1>
-  </body>
 
-<html>
+    <div class="container">
+      <input type="text" placeholder="Enter your Origin" id="originInput">
+      <input type="text" placeholder="Enter your Destination" id="destinationInput">
+      <button type="button" name="route">Route my Journey</button>
+      <div class="journeyDisplay">
+        <p>Begin your Journey at <span id="originAnnounce"></span></p>
+        <ul>
+          <li>Temp 1</li>
+          <li>Temp 2</li>
+          <li>Temp 3</li>
+        </ul>
+        <p>End your Journey at <span id="destinationAnnounce"></span></p>
+      </div>
+    </div>
+
+    <div id="map"></div>
+
+  <script src="trainlines.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src="maps.js"></script>
+  <script src="main.js"></script>
+
+  </body>
+</html>
