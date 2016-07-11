@@ -98,22 +98,17 @@ var leaveTheShire = function () {
      }
 leaveTheShire();
 
-//PART 7  THINK THIS ISN'T TOTALLY RIGHT
+//PART 7
 var forgeTheFellowShip = function () {
    // create a new div called `'the-fellowship'` within `rivendell`
    var $rivendell = $('article').eq(1);
-   var $theFellowship = $rivendell.append(($('<div>')).text('the-fellowship'));
-   var $listOfHobbits = $('.hobbit');
-   var $listOfBuddies = $rivendell.find('li');
-   for (var i = 0; i < $listOfHobbits.length; i++){
-    //  $theFellowship.append('li').text();
-    $listOfHobbits.detach().appendTo( $theFellowship);
-    // debugger
-    alert($listOfHobbits.eq(i).text() + ' has joined the party')}//alert incorrect
+   var $theFellowship = $rivendell.append($('<div>').text('the-fellowship'));
+  //  var $listOfHobbits = $('.hobbit');
+   var $listOfBuddies = $rivendell.find('li'); //$listOfBuddies- bad name its actually all li's in rivendell
    for (var i = 0; i < $listOfBuddies.length; i++){
-      // $theFellowship.append('li').text();
-      $listOfBuddies.detach().appendTo( $theFellowship);
-      alert($listOfBuddies.eq(i).text() + ' has joined the party')};
+      $listOfBuddies.eq(i).detach().appendTo( $theFellowship);
+      alert($listOfBuddies.eq(i).text() + ' has joined the party');
+    };
    };
    // add each `hobbit` and `buddy` one at a time to `'the-fellowship'`
    // after each character is added make an alert that they // have joined your party
