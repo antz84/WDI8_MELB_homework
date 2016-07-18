@@ -1,0 +1,62 @@
+h1 {
+  color: red;
+}
+
+h2 {
+  color: #000000;
+  font-size: 15px;
+}
+
+p {
+}
+
+.title {
+  color: red;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.title2 {
+  color: grey;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .5em;
+}
+
+.initial {
+  font-size: 40px;
+  color: lightgrey;
+}
+
+.asideTitle {
+  color: grey;
+  font-weight: bold;
+}
+
+.date {
+  color: grey;
+}
+
+.extra {
+color: tomato;
+}
+
+nav > ul > li {
+  background-color: #000000;
+  color: #ffffff;
+  display: inline;
+  padding: 10px;
+}
+
+header {
+  box-sizing: ;
+}
+
+span {
+  color: grey;
+}
+
+.footerList {
+  display: inline;
+  padding: 1px;
+  color: red;
+  list-style: |;
+}
