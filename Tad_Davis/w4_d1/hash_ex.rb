@@ -1,4 +1,4 @@
-=begin
+
 
 ##A
 a = ["Anil", "Erik", "Jonathan"]
@@ -32,7 +32,7 @@ users["Erik"][:favorite_numbers].push(7)
 users["tad"] = " " #passing into an array #3
 users["Erik"][:favorite_numbers].min
 
-=end
+
 
 
 users = {
