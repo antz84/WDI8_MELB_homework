@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Melbourne Public Transport</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,300italic,400italic,300,100italic,100' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+
+  <div class="container">
+    <div class="searchHolder">
+      <input type="text" placeholder="Enter your Origin">
+      <input type="text" placeholder="Enter your Destination">
+      <button id="routeButton">Route my Journey</button>
+    </div>
+    <div class="journeyDisplay">
+        <img src="https://maps.gstatic.com/tactile/omnibox/directions-2x-20150909.png" alt="">
+        <p>Begin your Journey at <span id="originAnnounce"></span></p>
+        <ul id="stops">
+        </ul>
+        <img src="https://maps.gstatic.com/tactile/omnibox/directions-2x-20150909.png" alt="">
+        <p>End your Journey at <span id="destinationAnnounce"></span></p>
+        <p id="pStops"><br /> You will have <span id="stopsNumerical"></span> stops.</p>
+        <p class="disclaimer">If Richmond is displayed twice you must <br /> swap to a new train line</p>
+      </div>
+  </div>
+
+  <div id="map"></div>
+
+  <script src="trainlines.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBl2FVXsS9OHX_rxkDscyv3UcrQVnur9aY"></script>
+  <script src="maps.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
+
+
+<!-- ADD WALKING MAN -->
