@@ -4,7 +4,6 @@ var initialise = {
     zoom: 12,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     disableDefaultUI: true,
-
 };
 
 

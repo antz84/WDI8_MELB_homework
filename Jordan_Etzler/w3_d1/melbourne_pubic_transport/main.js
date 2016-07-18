@@ -7,14 +7,18 @@ var result = document.getElementById('result');
 
 function findRoute(a, b) {
 
-  // for (var i = 0; i < trainLines.length; i++)
-  //   if (trainLines[i].indexOf(origin) != -1) {
-  //     var originIndex = trainLines[i].indexOf(origin);
-  //     var destinationIndex = trainLines[i].indexOf(destination);
-  //     var intersection = trainLines[i].indexOf("Richmond");
-  //     var originLine = trainLines[i];
-  //     var destinationLine = trainLines[i];
-  //   }
+//   for (var line in lines) {
+//     console.log(line);
+//     console.log(lines[line]);
+//   }
+//   for (var i = 0; i < trainLines.length; i++)
+//     if (trainLines[i].indexOf(origin) != -1) {
+//       var originIndex = trainLines[i].indexOf(origin);
+//       var destinationIndex = trainLines[i].indexOf(destination);
+//       var intersection = trainLines[i].indexOf("Richmond");
+//       var originLine = trainLines[i];
+//       var destinationLine = trainLines[i];
+//     }
 
   // Find Active trainlines
 
@@ -117,16 +121,12 @@ function findRoute(a, b) {
     document.getElementById("stopsNumerical").innerHTML = finalJourney.length;
   }
 
-  //box styling
+  //Box Styling
 
   var journeyDisplay = document.getElementsByClassName('journeyDisplay')[0];
   journeyDisplay.style.display = 'block';
-
-
-
-
-
 }
+
 
 
 routeButton.addEventListener('click', function () {
