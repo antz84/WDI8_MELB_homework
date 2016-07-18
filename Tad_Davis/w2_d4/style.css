@@ -1,15 +1,30 @@
+html{
+	height: 100%;
+}
+
+.magicFonts{
+font-family: 'Playball', cursive;
+font-size: 50px;
+text-align: center;
+color: darkgreen; 
+}
+
 body{
 	width: 100%;
-	margin-bottom: 50px;	
+	/*margin-bottom: 50px;	*/
 /*	background-image: url("http://www.absolutegeeks.com/wp-content/uploads/2015/07/fwmarisyyi9s0xrveei60c5y5nkgu7tjwemvzyvg1vnimhtrvhzcovjfqompn14p.jpg");
 */
- background: pink;	
-background-size: cover;
+ background: url('https://cbi-blog.s3.amazonaws.com/blog/wp-content/uploads/2014/09/Burning-Money-cropped.jpg');	
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
 }
+
 *{
 	box-sizing: border-box;
-}
+}.
 
 h1{
 	text-align: center;
@@ -20,10 +35,12 @@ h1{
 	width: 25%;
 	margin:12.5% 12.5% 0% 12.5%;
 	background-color: grey;
+	opacity: 0.8;
 	border-radius: 25px;
 	float: left;
 	color:white;	
-	
+	padding-left: 12.5%
+	padding-right: 12.5%;
 	}
 
 .burns{
@@ -35,14 +52,17 @@ h1{
 	width: 24%;
 	margin:12.5% 12.5% 0% 12.5%;
 	color: white;
-	background-color: blue ;
+	background-color: black ;
 
 }
 .textboxBankAcc{
-	background-color: pink; 
+	clear:left;
+	
+	background-color: darkgreen; 
 	width: 54%;
+	color: white;
 	text-align: center;
-	padding-left: 10%;
+
 }
 
 */

@@ -1,4 +1,4 @@
-console.log("hey");
+
 
 //******************************* Account 1 
 //Buttons Buttons!
@@ -53,10 +53,22 @@ function adding(){
 
 function taking(){
 
-	 currentAcc1 = currentAcc1 - parseInt(enterMoney.value); 
+	if(currentAcc1 > 0){
+		currentAcc1 = currentAcc1 - parseInt(enterMoney.value); 
+	
 	display.innerHTML = currentAcc1;
+	
+	}else if((currentAcc1 = 0)&&(currentAcc2>=1)){
 
+	currentAcc1--;
+	currentAcc1 = currentAcc2 - parseInt(checkenterMoney.value); 
+	currentAcc1 = currentAcc2 + currentAcc1;
+
+	checkdisplay.innerHTML = currentAcc2;
+	display.innerHTML = currentAcc1;
 	}
+}//end of function
+
 //***********************************************************
 //functions for the Check 
 
@@ -75,9 +87,7 @@ function checktaking(){
 	}
 
 //***************************************************************
- 
-
-
+//if zero take money from the other account	
 
 
 //************************************************** MR BURNS FUNCTION
@@ -91,7 +101,7 @@ function checktaking(){
     var show = function(){
     	
       myDiv.style.display = "block";
-      setTimeout(hide, 1300);  // 5 seconds
+      setTimeout(hide, 900);  // 5 seconds
     }
 
     var hide = function(){
