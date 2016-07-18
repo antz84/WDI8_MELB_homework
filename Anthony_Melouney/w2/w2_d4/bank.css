@@ -1,0 +1,31 @@
+body {
+  background-color: yellow;
+  text-align: center;
+  font-family: cursive;
+}
+
+.savings {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  display: inline;
+  border; 2px solid black;
+}
+
+.checking {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  display: inline;;
+  border-width: 2px
+  border-color; black;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  display: inline;;
+  border-width: 2px
+  border-color; black;
+
+}
