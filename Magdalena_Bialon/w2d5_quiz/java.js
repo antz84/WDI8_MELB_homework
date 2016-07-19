@@ -26,7 +26,7 @@ var favouriteColor = idfavCol.value;
 
 //q5
 var paragraphIn = document.querySelector('.my-articles');
-var myDiv = getElementsByTagName('div')[0];
+var myDiv = document.getElementsByTagName('div')[0];
 
 var addParagraph = function(){
   var paragraph = paragraphIn.value;
@@ -42,6 +42,10 @@ var addParagraph = function(){
   paragraphIn.focus();
 };
 
+
+var myArticlesDiv = document.getElementsByClassName('my-articles')[0];
+ var paragraph = document.createElement('p');
+ myArticlesDiv.appendChild(paragraph);
 
 //q6
 // var myUl = document.getElementsByTagName('ul');
