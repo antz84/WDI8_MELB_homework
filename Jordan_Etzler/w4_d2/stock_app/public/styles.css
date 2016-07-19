@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-right;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: rgb(235, 235, 235);
+}
+
+.container {
+  display: block;
+  box-sizing: border-box;
+  background-color: white;
+  width: 1000px;
+  margin: 0 auto;
+  height: 700px;
+  text-align: center;
+  padding: 100px;
+  margin-top: 60px;
+}
+
+h1 {
+  font-size: 8em;
+  margin: 0px;
+}
+
+
+h3 {
+  font-size: 1.5em;
+  color: grey;
+  margin: 0px;
+}
+
+.columns {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 75px;
+
+}
+
+.left {
+  float: left;
+  width: 50%;
+}
+
+.right {
+  float: left;
+  width: 50%;
+}
+
+p > #number {
+  font-weight: bold;
+  margin-bottom: 100px;
+}
