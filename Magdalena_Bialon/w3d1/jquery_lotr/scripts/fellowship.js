@@ -160,8 +160,10 @@ hornOfGondor();
 var itsDangerousToGoAlone = function (){
   $('#the-fellowship li:eq(0)').appendTo($('article').eq(2));
   $('#the-fellowship li:eq(1)').appendTo($('article').eq(2));
+  //$('div:contains("Samwise")').appendTo($('article').eq(2));
+  console.log($('div:contains("Samwise")'));
   var $newDiv = $('<div id= "mount-doom">');
-  $newDiv.appendTo($('article').eq(2))
+  $newDiv.appendTo($('article').eq(2));
    // take `Frodo` and `Sam` out of the fellowship and move // them to `Mordor`
    // add a div with an id of `'mount-doom'` to `Mordor`
 };

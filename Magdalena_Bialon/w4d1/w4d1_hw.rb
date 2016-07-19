@@ -61,9 +61,9 @@ users["Jonathan"][:twitter]
 users["Erik"][:favorite_numbers].push(7)
 users["Magda"] = {}
 puts users["Erik"][:favorite_numbers]
-#puts users["Erik"][:favorite_numbers].sort
 puts users["Erik"][:favorite_numbers].min
-puts users["Anil"][:favorite_numbers].map{ |n| n if n % 2 == 0 }.compact
+# puts users["Anil"][:favorite_numbers].map{ |n| n if n % 2 == 0 }.compact
+puts users["Anil"][:favorite_numbers].select{ |n| num.even? }
 
 intersection = (users["Jonathan"][:favorite_numbers] & users["Erik"][:favorite_numbers] & users["Anil"][:favorite_numbers])
 puts intersection

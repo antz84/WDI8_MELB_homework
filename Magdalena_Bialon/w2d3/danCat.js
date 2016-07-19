@@ -23,9 +23,9 @@ function catWalk () {
 // cat.style.left = (currentLeft + movePixels) + 'px';  //into a number, calculations and in the end pix
 
 
-
   if (walkForwards && (currentLeft > (window.innerWidth-cat.width))) {
     walkForwards = false;
+    /*or resets to the start would be : cat.style.left '0px' */
   }
 
   if (!walkForwards && (currentLeft <= 0)) {
@@ -55,7 +55,6 @@ function catWalk () {
 
      //var showDancingCat = setTimeout(function(){dancingCat.style.display="inline-block";;}, 5000 );
   }
-
 
 
 //OK walking CAT
@@ -132,3 +131,10 @@ buttonStart.addEventListener('click', startCatWalk);
 buttonFaster.addEventListener('click', walkFaster);
 
 buttonStop.addEventListener('click', stopWalk);
+
+
+/* or shorter:
+var buttonStart = document.getElementsByTagName('button')[0];
+buttonStart.addEventListener('click', startCatWalk);
+
+WOULD BE: ??  document.querySelector('button').addEventListener('click', startCatWalk)
