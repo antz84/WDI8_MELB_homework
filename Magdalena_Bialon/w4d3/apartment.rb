@@ -17,7 +17,15 @@ class Apartment
   end
 
   def to_s
-    "Price: #{@price} and is occupied:  #{@is_occupied}, square meters: #{@sqft}, num of bedrooms #{@num_beds} and bathrooms, is rented by #{@renters} people."
+    "Apartment price: #{@price} and is occupied:  #{@is_occupied}, square meters: #{@sqft}, num of bedrooms #{@num_beds} and bathrooms, is rented by #{@renters.join(', ')}."
   end
 
 end
+
+
+#{@renters.join(', ')  to get rid of :
+#Apartment price: 1000.0 and is occupied:  true, square meters: 100, num of bedrooms 3 and bathrooms,
+#   is rented by [#<Person:0x007f9bc9901188 @name="Dominika", @age=40, @gender="female", @apartment="apartment">].
+
+#Apartment price: 1000.0 and is occupied:  true, square meters: 100, num of bedrooms 3 and bathrooms,
+#      is rented by Dominika, aged  40 gender: female, live in apartment .
