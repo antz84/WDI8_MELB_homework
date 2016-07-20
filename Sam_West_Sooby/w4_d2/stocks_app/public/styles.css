@@ -1,0 +1,28 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+h2 {
+  text-align: left;
+  padding-left: 7em;
+}
+
+p {
+  padding-top: 2em;
+  text-align: center;
+}
+
+article {
+  background-color: white;
+  padding: 5% 1px;
+  border: 2px solid black;
+  width: 60%;
+  margin: 6% auto;
+  text-align: center;
+}
+
