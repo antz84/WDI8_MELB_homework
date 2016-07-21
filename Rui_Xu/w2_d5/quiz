@@ -1,0 +1,13 @@
+1. document.getElementsByTagName('h1')[0];
+
+2. document.getElementsByTagName('h1')[0].textContent = 'Friend';
+
+3. document.getElementsByTagName('button')[0].addEventListener('click',function(){document.getElementsByTagName('div')[0].style.backgroundColor='red';});
+
+4.var favouriteColor = document.getElementById('favCol').value;
+
+5.document.getElementsByClassName('my-articles')[0].innterHTML="<p></p>";
+
+6. document.getElementsByTagName('li').length;
+
+

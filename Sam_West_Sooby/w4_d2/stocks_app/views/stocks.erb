@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stock App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <article>
+
+  <h1>Stock Checker</h1>
+
+  <h2><%= @answer %></h2>
+
+  <% unless @result == "" %>
+  <p><%= @result %> is the last trade</p>
+  <% end %>
+  <ul></ul>
+
+  </article>
+  
+</body>
+</html>

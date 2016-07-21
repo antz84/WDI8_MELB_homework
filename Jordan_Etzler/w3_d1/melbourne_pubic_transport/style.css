@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#map{
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.container {
+  position: absolute;
+  box-sizing: border-box;
+  top: 15px;
+  left: 15px;
+  width: 400px;
+  background-color: #f0f0f0;
+  z-index: 2;
+  box-shadow: 3px 3px 20px #888888;
+}
+
+.searchHolder {
+  padding: 20px;
+  margin: 0;
+}
+
+input {
+  width: 100%;
+  margin: 0;
+  padding: 17px 12px 17px 12px;
+  margin-bottom: 15px;
+  font-size: 0.7em;
+  border: 0px;
+  background-color: white;
+}
+
+button {
+  width: 100%;
+  margin: 0px 0px 15px 0px;
+  padding: 14px 12px 14px 12px;
+  background-color: #679DF6;
+  color: white;
+  border: 0px;
+  font-size: 0.7em;
+}
+
+.journeyDisplay {
+  display: none;
+  height: 0px;
+  background-color: white;
+  height: auto;
+  padding: 20px 30px 20px 30px;
+}
+
+img {
+  display: inline-block;
+  width: 20px;
+  margin: 10px 13px 0px 0px;
+}
+
+p {
+  font-size: 0.8em;
+  color: #8C8C8C;
+  display: inline;
+
+}
+
+#pStops {
+  display: block;
+}
+
+.disclaimer {
+  display: block;
+  font-size: 0.6em;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 20px;
+}
+
+li {
+  list-style: none;
+  font-size: 0.8em;
+  color: #8C8C8C;
+  padding: 2px 0px 2px 0px;
+}

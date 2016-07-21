@@ -1,0 +1,77 @@
+body {
+  background-color: #d6d6d6;
+  color: #000000;
+  margin: auto;
+  width: 1000px;
+  background-image: url("../images/background.jpg");
+  background-repeat:repeat-x;
+}
+a {
+  color: #cc6633;
+}
+
+#headerImage {
+    display:block;
+    margin: auto;
+
+}
+.leftSide {
+  background-color: white;
+  display:inline-block;
+  width: 650px;
+  margin-right: 10px;
+
+}
+
+.rightSide{
+  background-color: white;
+  display:inline-block;
+  width: 250;
+  vertical-align: top;
+}
+
+.rightSideImages {
+  display: block;
+  padding: 20px;
+}
+ul li{
+   list-style-type: none;
+   font-weight: bold;
+   margin: 0;
+   padding: 0;
+   font-size: 15px;
+}
+.leftArticleECardHeader {
+
+  padding: 20px;
+}
+
+.leftArticleWork {
+
+  padding: 20px;
+}
+
+.download {
+  color: darkorange;
+}
+
+.author {
+  color: darkorange;
+}
+
+.commentCount {
+  color: darkorange;
+}
+
+.mainArticleFooter {
+
+  border-top : 1px solid black;
+  border-bottom: 2px solid black;
+  margin: 20px;
+  margin-bottom: 40px;
+}
+
+.footerClass {
+  display:block;
+  margin: 0 auto;
+}

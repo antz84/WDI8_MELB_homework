@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PCCU - Banking</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+</head>
+  <body>
+
+  <header>
+        <div class='leftHeader'>
+          <p>Welcome back, Jordan.</p>
+        </div><!--
+    <--></--><div class="rightHeader">
+          <img src="http://www.seek.com.au/templates/20177329_4_top.png" alt="">
+        </div>
+  </header>
+
+  <div class="container">
+    <div id"accountHeader">
+      <p>Your Accounts</p>
+    </div>
+
+    <div class="savingColumn">
+      <div class="accountHolder">
+        <h2>Savings</h2>
+        <p>Your Balance is ...</p>
+        <div class="balance" id="savingsBalance">0.00</div>
+        <input type="number" id="savingsEntry" placeholder="Enter Amount">
+        <button class="withdrawButton" id="savingsWithdraw">Withdraw</button>
+        <button class="depositButton" id="savingDeposit">Deposit</button>
+      </div>
+    </div>
+
+    <div class="chequeColumn">
+      <div class="accountHolder">
+        <h2>Cheque</h2>
+        <p>Your Balance is ...</p>
+        <div class="balance" id="chequeBalance">0.00</div>
+        <input type="number" id="chequeEntry" placeholder="Enter Amount">
+        <button class="withdrawButton" id="chequeWithdraw">Withdraw</button>
+        <button class="depositButton" id="depositDeposit">Deposit</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+  </body>
+</html>
+
+ <!-- balance of the bank account is $0  background of that bank account should be red.  -->

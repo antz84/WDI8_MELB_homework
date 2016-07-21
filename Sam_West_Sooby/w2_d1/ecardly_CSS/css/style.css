@@ -1,0 +1,124 @@
+/*#topImg {
+  background-image:url('../images/background.jpg');
+  background-repeat: repeat-x;
+  height: 100px;
+  margin: 20px;
+}
+
+#sideImages {
+  max-width: 80%;
+  max-height: 80%;
+  margin-left: 20px;
+  align-content: center;
+}
+
+#wrapper {
+  align-content: auto;
+  width: 100%;
+}
+
+body {
+  background-color: #d6d6d6;
+  text-color: #000000;
+  link-color: #cc6633;
+
+}
+
+.middleSection {
+  padding-left: 3%;
+  padding-right: 3%;
+  background-color: white;
+  width: 50%;
+  display: inline-block;
+}
+
+#sideBar {
+  background-color: white;
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+h3 {
+  text: bold;
+  padding-top: 10px;
+}
+
+.interPic {
+  width: 99%;
+  margin-bottom: 10px;
+  }
+
+footer {
+  border-style: solid;
+  border-color: #000000;
+  border-left: none;
+  border-right: none;
+}*/
+
+/*DT's CSS*/
+
+* {
+  box-sizing: border-box;
+}
+
+#logo {
+  display: block;
+  margin: 0 auto 12px auto;
+}
+
+body {
+  background-image: url("../images/background.jpg");
+  background-repeat: repeat-x;
+  background-color: #d3d3d3;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto 0 auto;
+}
+
+.container > * {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.main {
+  width: 60%;
+  background-color: pink;
+}
+
+aside {
+
+  padding: 1em;
+  width: 39%;
+  background-color: mistyrose;
+}
+
+article img {
+  max-width: 100%;
+}
+
+article footer {
+  border-top: 1px dashed black;
+  border-bottom: 1px solid black;
+  padding: 5px 5px;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside img {
+  max-width: 100%;
+  display: block;
+  margin: 1px auto 1px auto;
+}
+
+
+
+
+
+
+

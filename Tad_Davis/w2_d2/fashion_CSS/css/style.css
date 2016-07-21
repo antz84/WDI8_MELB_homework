@@ -1,0 +1,116 @@
+.titleBar{
+
+	background-color: black;
+	color: white;
+	border: solid 1px black;
+	width: 16.3%;
+	list-style: none;	
+	text-align: center;
+	display:inline-block;
+	margin: 0 auto;
+	padding:  1.5% 0%;
+	max-width: 100%;
+
+}
+
+#pageTitle{
+	margin-left: 3%;
+
+}
+
+nav > ul {margin: 0}
+
+.postFooter{
+
+color :#C9591C;
+font-size: 1.3em;
+text-align: right;
+border-bottom:1px solid lightgrey;
+padding-bottom: 2%;
+}
+
+.titleEmphasis{
+color :#C9591C;
+font-size: 1.3em;
+}
+
+.secondHeading{
+	color:lightgrey;
+}
+
+.dates{
+	color:lightgrey;
+}
+
+ * {
+	box-sizing: border-box;
+}
+
+body{
+	width: 80%;
+}
+
+main{
+	max-width:60%;
+	padding: 1%;
+	display:inline-block;
+
+	}
+
+aside{
+	margin-top: 5%;
+	width:39%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 2%;
+}
+
+img{
+	width: 100%;
+	}
+
+p{
+	width: 100%;
+}
+
+.sideBlock img{
+	width: 40%;
+    margin-right: auto;
+    padding-top: 5%;
+}
+
+.sideBlock ul li{
+	color :#C9591C;
+
+}
+
+
+.bottomNotes{
+	color :#C9591C;
+
+}
+
+.bottomLinks{
+	color: #C9591C;
+	
+	width: 6.3%;
+	list-style: none;	
+	text-align: center;
+	display:inline-block;
+	margin: 0 auto;
+	max-width: 90%;
+
+}
+
+
+
+.firstcharacter { 
+	float: left; 
+	color: lightgrey; 
+	font-size: 75px; 
+	line-height: 60px; 
+	padding-top: 4px;
+	padding-right: 8px;
+	 padding-left: 3px; 
+	 font-family: Georgia;
+	  }

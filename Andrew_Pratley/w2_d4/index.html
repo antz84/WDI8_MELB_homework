@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="bank.css">
+  <title>Bank</title>
+</head>
+<body>
+  <div id="mainScreen">
+    <img src="http://logodesignerblog.com/wp-content/uploads/2009/02/citibank.jpg" alt="logo">
+
+    <div id="checking_account">
+      <p id="checking_account_title">Checking Account</p>
+      <p id="checking_bank_bal_is">Balance Is:</p>
+      <p id="checking_bal_print">$00.00</p>
+      <input type="number" id="checking_input">
+      <button id="checking_withdraw_btn">Withdraw</button>
+      <button id="checking_deposit_btn">Deposit</button>
+    </div>
+
+    <div id="savings_account">
+      <p id="savings_account_title">Savings Account</p>
+      <p id="savings_bank_bal_is">Balance Is:</p>
+      <p id="savings_bal_print">$00.00</p>
+      <input type="number" id="savings_input">
+      <button id="savings_withdraw_btn">Withdraw</button>
+      <button id="savings_deposit_btn">Deposit</button>
+    </div>
+
+    <div>
+      <p id='features'>Features</p>
+      <p>Handles cents and rounds correctly</p>
+      <p>Ignores withdrawals that exceed savings balance</p>
+      <p>Ignores transations that include characters other than numbers</p>
+      <p>Will never produce an error</p>
+      <p>Checking account turns back to green when over $0.00 balance</p>
+    </div>
+
+  </div>
+
+<script src="bank.js"></script>
+</body>
+</html>

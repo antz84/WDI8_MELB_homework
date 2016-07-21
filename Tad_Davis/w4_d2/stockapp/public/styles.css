@@ -1,0 +1,32 @@
+body {
+/*
+background-image: url("https://pmcvariety.files.wordpress.com/2016/01/top-gun.jpg");
+*/
+background-image: url("http://www.killahbeez.com/wordpress/wp-content/uploads/2009/06/gekko.jpg");
+
+
+background-size: cover;
+width: 300px;
+}
+
+h1 {
+	background-color: turquoise;
+	font-size: 3em;
+	margin-left: 2%;
+	border: solid 4px white;
+	opacity: 0.6;
+	color: black;
+	text-align: center;
+	display: inline-block;
+}
+
+h2{
+background-color: turquoise;
+	font-size: 1.5em;
+	 border: solid 4px white;
+	margin-left: 2%;
+	color: black;
+	opacity: 0.6;	
+	text-align: right;
+	display: inline-block;
+}

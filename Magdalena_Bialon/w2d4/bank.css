@@ -1,0 +1,102 @@
+body {
+  margin: 0 auto;
+  text-align: center;
+  font-family: monospace;
+  box-sizing: border-box;
+}
+
+
+#cat {
+  display: inline-block;;
+  width: 50%;
+  text-align: center;
+  margin: 8em auto;
+}
+
+#cat2{
+  width: 43%;
+  text-align: center;
+  margin: 2em auto;
+}
+
+#cat3{
+  width: 70%;
+  text-align: center;
+  margin: 2em auto;
+}
+#cat4{
+  margin: 2em auto;
+}
+
+
+
+#bankLogo{
+  margin: 2px;
+  display: block;
+  text-align: left;
+  width: 10%;
+}
+
+
+.savings, .checking  {
+  border: 1px solid grey;
+  display: block;
+  width: 40%;
+  padding: 1em;
+  margin: 2px auto;
+  display: inline-block;
+  border-radius:4px;
+  position: relative;
+}
+
+.savings {
+  background-color:#7AF5F5;
+}
+
+.checking {
+  background-color:#78D5E3;
+}
+
+.savings:hover{
+  border-color:#34DDDD;
+  border-width: 3px;
+}
+
+.checking:hover{
+  border-color:#34DDDD;
+  border-width: 3px;
+}
+
+
+button:hover{
+  border: 2px solid #28B78D;
+}
+
+input:hover{
+  border-color: red;
+}
+
+input{
+  margin: 10px;
+  height: 3em;
+  color: blue;
+  font-weight: 500;
+  text-align: center;
+  border-radius:4px;
+  width: 70%;
+}
+
+button{
+  background:#89E894;
+  padding: 1em;
+	color:#fff;
+	font-family: monospace;
+	font-size: 1em;
+	border-radius:4px;
+  border:1px solid #459A00;
+  width: auto;;
+}
+
+p {
+  font-size: 1.2em;
+}

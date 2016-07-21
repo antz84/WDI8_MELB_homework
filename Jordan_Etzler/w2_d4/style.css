@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+}
+
+body {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #CBD401;
+  padding: 1em 2em 1em 2em;
+  overflow: auto;
+  margin: 0;
+}
+
+header > div > img {
+  height: 100%;
+}
+
+.leftHeader {
+  text-align: left;
+  display: block;
+  float: left;
+  width: 50%;
+  height: 3.5em;
+}
+
+.rightHeader {
+  text-align: right;
+  display: block;
+  float: left;
+  width: 50%;
+  height: 3.5em;
+}
+
+.leftHeader > p {
+  font-weight: 700;
+  color: #81766C;
+  font-size: 1.5em;
+  margin: 0.5em 0 0 0;
+}
+
+.container {
+  background-color: #F0F0EA;
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 50px;
+  height: 700px;
+}
+
+.container > div:first-child {
+  background-color: #CDCAB7;
+  padding: 1.5em 0em 1.5em 3em;
+  font-size: 1.2em;
+}
+
+.container > div:first-child > p:first-child {
+  color: #81766C;
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+}
+
+.savingColumn {
+  float: left;
+  width: 50%;
+  padding-right: 10px;
+  margin-top: 40px;
+}
+
+.chequeColumn {
+  width: 50%;
+  padding-left: 10px;
+  float: left;
+  margin-top: 40px;
+}
+
+.accountHolder {
+  background-color: #CDCAB7;
+  width: 400px;
+  padding: 1em 1em 0.5em 1em;
+}
+
+.container > div:nth-child(2) > div {
+  float: right;
+}
+
+h2 {
+  color: #81766C;
+  text-align: center;
+}
+
+.balance {
+  font-weight: bold;
+  font-size: 4.5em;
+  color: black;
+  text-align: center;
+  margin-top: -0.3em;
+}
+
+
+input {
+  width: 100%;
+  display: inline-block;
+  border-bottom: 3px solid #81766C;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  padding: 1.3em 1.3em 1.3em 1.3em;
+  margin-top: 10px;
+}
+
+button {
+  width: 49%;
+  margin: 1em 0em 1em 0em;
+  padding: 1.5em;
+  background-color: #F0F0EA;
+  color: black;
+  border-width: 0px 0px 0px 0px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1em;
+  font-weight: 700;
+}
