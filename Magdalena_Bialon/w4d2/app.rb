@@ -4,16 +4,28 @@ require 'pry'
 require 'yahoofinance'
 
 
-get '/stocks' do
+get '/' do               #REQUEST
 
-  @st = params[:stock]
+  if params[:stock] != nil && params[:stock] != ""
 
-  #@result = YahooFinance::get_quotes(YahooFinance::StandardQuote, 'MSFT')['MSFT'].lastTrade
-  @result = YahooFinance::get_quotes(YahooFinance::StandardQuote, @st)[@st].lastTrade
+      @st = params[:stock]
 
-  erb(:index)
+      #@result = YahooFinance::get_quotes(YahooFinance::StandardQuote, 'MSFT')['MSFT'].lastTrade
+      @result = YahooFinance::get_quotes(YahooFinance::StandardQuote, @st)[@st].lastTrade
+
+          #@result = YahooFinance::get_quotes(YahooFinance::StandardQuote, params[:stock])
+          #@st = result[params[:stock]].lastTrade
+   else                   # else dosn't need to be included
+     @result = ""
+   end
+
+
+  erb(:index)           #RESPONSE
+
 end
 
 
-#browser : http://localhost:4567/stocks?stock=MSFT
-#browser : http://localhost:4567/stocks?stock=AAPL
+
+
+#browser : http://localhost:4567/?stock=MSFT
+#browser : http://localhost:4567/?stock=AAPL
