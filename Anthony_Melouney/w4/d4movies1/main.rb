@@ -11,7 +11,6 @@
 require 'httparty'
 require 'sinatra'
 require 'sinatra/reloader'
-require 'pry'
 
 get '/' do     # / is the location of the root aka home page
   erb :index
@@ -23,14 +22,6 @@ end
 
 get '/result' do       # grabs the result
   search = params['movie_search'].gsub(/\s+/, "+").strip.downcase
-  @result = HTTParty.get("http://www.omdbapi.com/?s=#{ search }")
-  @search = @result["Search"]
-  erb :result
-end
-# binding.pry
-
-get '/display' do
-  title = params['title'].gsub(/\s+/, "+").strip.downcase
-  @display = HTTParty.get("http://www.omdbapi.com/?t=#{ title }")
-  erb :display
+  @result = HTTParty.get("http://www.omdbapi.com/?t=#{ search }")
+  erb :display         # chucks out the result to the display page
 end
