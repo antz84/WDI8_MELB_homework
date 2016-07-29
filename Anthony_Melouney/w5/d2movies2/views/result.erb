@@ -1,10 +1,4 @@
-
-
 <% @search.each do |film| %>
-  <a href="http://www.omdbapi.com"> <h3><%= film["Title"] %></h3> </a>
+  <a href="/display?title=<%= film["Title"].downcase %>"><%= film["Title"] %></a>
   <img src="<%= film["Poster"] %>">
 <% end %>
-
-
-
-<!-- <%= film["Title"] -->
