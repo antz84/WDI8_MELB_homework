@@ -5,7 +5,12 @@ class Phone
   end
 
   def number
-    return @number
+    if @number.length <  10
+      @number = "0000000000"
+      return @number
+    else
+      return @number
+    end
   end
 
 end

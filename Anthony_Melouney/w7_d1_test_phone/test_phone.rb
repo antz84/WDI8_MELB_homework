@@ -23,13 +23,11 @@ require_relative './phone'
 class PhoneTest < MiniTest::Test
 
   def test_cleans_number
-    skip
     number = Phone.new("(123) 456-7890").number
     assert_equal "1234567890", number
   end
 
   def test_cleans_number_with_dots
-    
     number = Phone.new("123.456.7890").number
     assert_equal "1234567890", number
   end
@@ -47,7 +45,6 @@ class PhoneTest < MiniTest::Test
   end
 
   def test_invalid_when_9_digits
-    skip
     number = Phone.new("123456789").number
     assert_equal "0000000000", number
   end
