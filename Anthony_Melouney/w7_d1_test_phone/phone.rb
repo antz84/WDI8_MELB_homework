@@ -4,36 +4,38 @@ class Phone
   end
 
   def area_code
-    @number = @number.chars[0..2].to_s
-    # some code to remove new line
-    return @number
+    @number = @number.chars[0..2].join("")
   end
 
   def to_s
-    @number = @number.chars[0..2]
-    # some code to add brackets
-    # some code to add a space after the brackets
-    # some code to add '-' at -4 from last
-    return @number
+    # @first3 = @number.chars[0..2].join("")
+    # @next3 = @number.chars[3..5].join("")
+    # @last4 = @number.chars[6..9].join("")
+    # @final = "(" + @first3 + ") " + @next3 + "-" + @last4
+    # return @final
+    #
+    # @end = "(" + @first3 + ") " + @next3 + "-" + @last4
+    # return @end
+    "(#{@number.chars[0..2].join("")}) #{@number.chars[3..5].join("")}-#{@number.chars[6..9].join("")}"
   end
 
   def number
-    if @number.length > 8 && @number.length < 10
+    if @number.length == 9
       @number = "0000000000"
-      return @number
+      # return @number   #dont even need these return statements as ruby automatically returns the last evaluated statement
     elsif @number.length == 11 && @number.chars.first == '1'
       @number[0] = ''
-      return @number
+      @number    # dont need the returnstatement here, but still need the value
     elsif @number.length == 11 && @number.chars.first != '1'
       @number = "0000000000"
-      return @number
+      @number
     elsif @number.length == 9
       @number = "0000000000"
-      return @number
+     @number
     elsif @number.length == 10 && @number.chars[0..2] == '123'
-      return @number.area_code
+      @number.area_code
     else
-      return @number
+     @number
     end
   end
 
